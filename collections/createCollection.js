@@ -1,7 +1,9 @@
 var rp = require('request-promise');
-var API_KEY = require('./config').API_KEY;
+var API_KEY = require('../config').API_KEY;
 
-collectionCreationOptions = {
+var collection_name = 'contactPages';
+
+var createOptions = {
   method: 'POST',
   uri: 'https://api.wrap.co/api/card_collections',
   headers: {
@@ -9,12 +11,12 @@ collectionCreationOptions = {
     'Content-Type': 'application/json'
   },
   body: {
-    name: 'continueConversationPages'
+    name: collection_name
   },
   json: true
 };
 
-rp(collectionCreationOptions)
+rp(createOptions)
   .then(function(res) {
     console.log(res);  
   });
