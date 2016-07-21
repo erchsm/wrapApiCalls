@@ -1,0 +1,8 @@
+{
+  "name": "apiCalls",
+  "main": "server.js",
+  "dependencies": {
+    "request": "^2.73.0",
+    "request-promise": "^4.0.2"
+  }
+}
