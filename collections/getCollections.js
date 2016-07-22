@@ -17,9 +17,7 @@ var getOptions = {
 rp(getOptions)
   .then(function(res) {
     var interestedCollections = res.filter(function(collection) {
-      return collection.name === 'devices' || collection.name === 'accessories' ||
-        collection.name === 'plans' || collection.name === 'contactPages' || 
-        collection.name === 'continueConversationPages' || collection.name === 'homePages';
+      return collection.name === 'topics';
     });
     console.log(interestedCollections);
   });

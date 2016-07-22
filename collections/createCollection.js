@@ -1,7 +1,7 @@
 var rp = require('request-promise');
 var API_KEY = require('../config').API_KEY;
 
-var collection_name = 'contactPages';
+var collection_name = 'topics';
 
 var createOptions = {
   method: 'POST',
