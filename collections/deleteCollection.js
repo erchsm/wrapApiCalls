@@ -1,7 +1,7 @@
 var rp = require('request-promise');
 var API_KEY = require('../config').API_KEY;
 
-var collection_id = 'b0d62c07-813b-4115-8bbd-8a4391112de8';
+var collection_id = 'e8260bf2-487f-4b42-bc7c-8afc0fbff3b0';
 
 var deleteOptions = {
   method: 'DELETE',

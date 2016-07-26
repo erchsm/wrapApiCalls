@@ -1,4 +1,4 @@
-angular.module('CardCollectionService', []).factory('CardCollection', ['$http', ($http) => {
+angular.module('CollectionService', []).factory('Collection', ['$http', ($http) => {
     
   getCardsInCollection: () => {
 

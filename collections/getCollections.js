@@ -8,17 +8,15 @@ var getOptions = {
     'Authorization': 'Bearer ' + API_KEY,
     'Content-Type': 'application/json'
   },
-  body: {
-    name: 'continueConversationPages'
-  },
   json: true
 };
 
 rp(getOptions)
   .then(function(res) {
-    var interestedCollections = res.filter(function(collection) {
-      return collection.name === 'topics';
-    });
+    var interestedCollections = res;
+    // var interestedCollections = res.filter(function(collection) {
+    //   return collection.name === 'devices' || collection.name === 'accessories';
+    // });
     console.log(interestedCollections);
   });
 

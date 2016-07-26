@@ -1,7 +1,7 @@
 var rp = require('request-promise');
 var API_KEY = require('../config').API_KEY;
 
-var wrap_id = 'ad7337e5-fbd9-4159-b592-39ae34f94516';
+var wrap_id = '5692cd32-09b6-4df1-b21d-a49288892cd2';
 
 var getOptions = {
   method: 'GET',
