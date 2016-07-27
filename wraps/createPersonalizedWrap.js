@@ -1,11 +1,11 @@
 var rp = require('request-promise');
 var API_KEY = require('../config').API_KEY;
 
-var draft_wrap_id = '79040607-3c14-40df-a740-68203a3a3190';
+var draft_wrap_id = '9b9d1af9-f102-4e21-b4ab-c5dc9aab4cbf';
 var personalized_json = [
   {
-    id: '5eeb87e9-e802-4507-8c20-f43de0d408c8',
-    data: {'': ''}
+    id: 'a5bfbac3-6d60-4d12-8565-8a335ac9fd94',
+    data: {name: 'Leran'}
   }
 ];
 

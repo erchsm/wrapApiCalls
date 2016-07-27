@@ -19,8 +19,6 @@ var getOptions = {
 
 rp(getOptions)
   .then(function(res) {
-    res.forEach(function(r) {
-      console.log(r.name);  
-    })
+    console.log(res);  
   });
 
