@@ -3,18 +3,14 @@ var API_KEY = require('../config').API_KEY;
 
 var cards = [
   {
-    id: 'd7064d44-907b-4121-a1c9-cb2be8a756e1',
-    name: 'thank you'.toUpperCase()
-  },
-  {
-    id: '51ca4fea-1faa-4dbe-9037-4fc4eb084b2f',
-    name: 'confirmation'.toUpperCase()
+    id: '',
+    name: ''.toUpperCase()
   },
 ];
 
 cards.forEach(function(card, i) {
   (function(i) {
-    var collection_id = '0cfec9f6-ae9f-470e-882c-04da02a81f83';
+    var collection_id = '';
     var card_id =  card.id;
     var card_name = card.name;
     var data_label = card.name;

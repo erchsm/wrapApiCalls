@@ -1,7 +1,7 @@
 var rp = require('request-promise');
 var API_KEY = require('../config').API_KEY;
 
-var card_collection_id = 'bbe24862-14d2-4dc1-ab7c-eaed4186f320';
+var card_collection_id = '';
 
 var getOptions = {
   method: 'GET',
@@ -19,6 +19,8 @@ var getOptions = {
 
 rp(getOptions)
   .then(function(res) {
-    console.log(res.length);  
+    res.forEach(function(r) {
+      console.log(r.name);  
+    })
   });
 

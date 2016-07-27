@@ -1,7 +1,7 @@
 var rp = require('request-promise');
 var API_KEY = require('../config').API_KEY;
 
-var collection_name = 'prepaid';
+var collection_name = '';
 
 var createOptions = {
   method: 'POST',
